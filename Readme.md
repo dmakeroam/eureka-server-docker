@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/maxnus/eureka-server-docker.svg?branch=master)](https://travis-ci.org/maxnus/eureka-server-docker)
+
 ## Introduction
 This is a Java based container image running Eureka service discovery server
 
