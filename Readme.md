@@ -9,7 +9,7 @@ This is a Java based container image running Eureka service discovery server
 ## Building from source
 To build from source you need to clone the git repo and run maven build:
 ```
-$ git clone https://github.com/maxnus/eureka-server.git
+$ git clone https://github.com/maxnus/eureka-server-docker.git
 ```
 
 followed by
@@ -34,7 +34,7 @@ $ docker run -p 8761:8761 -d dmakeroam/discovery-server-eureka:latest
 version: '3'
 
 services:
-    nginx-node:
+    discovery-server:
         restart: always
         image: dmakeroam/discovery-server-eureka:latest
         ports:
