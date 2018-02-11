@@ -9,5 +9,5 @@ script:
 after_script:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
     docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
-    docker push ${IMAGE}:${TAG};
+    docker push "${IMAGE}":"${TAG}";
     fi
